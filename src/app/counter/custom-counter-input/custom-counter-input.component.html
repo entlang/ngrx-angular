@@ -1,0 +1,11 @@
+<div>
+    <div>
+        <h3>Channel: {{ channelName$|async }}</h3>
+    </div>
+    <input placeholder="Add a value" [(ngModel)]="value" type="text" />
+    <button class="btn btn-primary" (click)="onAdd()">Add to Counter</button>
+
+    <div>
+        <button (click)="onChangeChannel()">Change Channel</button>
+    </div>
+</div>
