@@ -7,7 +7,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './shared/components/header/header.component';
-import { appReducer } from './store/app.state';
 
 @NgModule({
   declarations: [
@@ -18,7 +17,7 @@ import { appReducer } from './store/app.state';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    StoreModule.forRoot(appReducer),
+    StoreModule.forRoot({}),
     // Instrumentation must be imported after importing StoreModule (config is optional)
     StoreDevtoolsModule.instrument({
       maxAge: 25, // Retains last 25 states
